@@ -38,7 +38,7 @@ dashboardPage(
   dashboardBody(
     useShinyalert(), 
     useShinyjs(),
-    shinyjs::extendShinyjs(text = "shinyjs.refresh = function() { location.reload(); }"),
+    #shinyjs::extendShinyjs(text = "shinyjs.refresh = function() { location.reload(); }", functions=c("refresh")),
     
 
     #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------      
